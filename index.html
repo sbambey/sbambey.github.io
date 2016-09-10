@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 <!DOCTYPE html>
@@ -11,24 +10,162 @@ layout: default
   <body>
     {% include header.html %}
 
-    <div class="home">
+    <section class="container project">
 
-      <h1 class="page-heading">Posts</h1>
+      <h2 class="project">Project Showcase</h2>
+      <h3>1. flightcrew.io</h3>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/flightcrew1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
+            <img src="{{ "/images/flightcrew1.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Personal job board - Overview of all matched jobs</figcaption>
+        </figure>
 
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/flightcrew4.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
+            <img src="{{ "/images/flightcrew4.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Specific job page</figcaption>
+        </figure>
 
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/flightcrew2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
+            <img src="{{ "/images/flightcrew2.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Pilot sign-up form - Log of all flight hours</figcaption>
+        </figure>
 
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/flightcrew3.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
+            <img src="{{ "/images/flightcrew3.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Pilot sign-up form - Log of pilot licenses and ratings</figcaption>
+        </figure>
+      </div>
+      <p>flightcrew.io is a job board written in Ruby on Rails, that automatically matches pilots with jobs appropriate for their experience level. The functionality includes a detailed sign up system which allows users to enter their qualifications such as flight hours, licenses, ratings and more. A comprehensive matching algorithmn then matches pilots with jobs they are eligible for. Furthermore, there is an extensive back-end for adding jobs and finding updates to job postings on external sites. The source code is available on github at <a href="https://github.com/sbambey/flightcrew" target="_blank">https://github.com/sbambey/flightcrew</a> and a live demo can be seen at <a href="https://safe-forest-2459.herokuapp.com/" target="_blank">https://safe-forest-2459.herokuapp.com/</a> (may take a few seconds to load).</p>
 
+      <h3>2. manifest.space</h3>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/manifest1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
+            <img src="{{ "/images/manifest1.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">SpaceX Manifest Header</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/manifest2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
+            <img src="{{ "/images/manifest2.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Launch Listings</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/manifest3.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x2020">
+            <img src="{{ "/images/manifest3.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Launch Details and Media</figcaption>
+        </figure>
+      </div>
+      <p>manifest.space is a log of some of SpaceX's launches. It is a passion project for me and I occassionally find time to update it. The project is a Ruby on Rails app and is a great way for me to fiddle with different libraries and tools. In the early phases, I collaborated with some other people over the internet and as a result, I developed a basic revision tracking system available through the admin panel and integrated a markdown editor. The source code is available on github at <a href="https://github.com/sbambey/manifest" target="_blank">https://github.com/sbambey/manifest</a> and a live demo can be seen at <a href="http://www.manifest.space" target="_blank">http://www.manifest.space</a> (may take a few seconds to load).</p>
+
+      <h3>3. Antenna tracker for Unmanned Aircraft Systems</h3>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/tracker1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1500">
+            <img src="{{ "/images/tracker1.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Testing of Antenna Tracker yaw control - Outside to allow for acquiry of GPS signal. Equipment set up on our portable stand (aka nearby garbage ton).</figcaption>
+        </figure>
+      </div>
+      <p>As part of the Unmanned Aircraft Systems (UAS) Engineering Design Team at UBC, I developed the electronics and software and assisted with the machnical build for an antenna tracker. The tracker software interfaces with the drone using a protocol called Mavlink and receives live telemetry. It then calculates a yaw and a pitch angle for the antenna and drives two stepper motors in the appropriate directions. The motors were initially controlled by two inexpensive stepper motor drivers that gave us some trouble. The team then received <a href="http://www.zaber.com/products/product_group.php?group=X-MCB2" target="_blank">a high-end stepper motor controller</a> which I integrated into the tracker. Feedback on the actual position of the antenna is provided by an Inertial Measurement Unit (IMU) mounted to the antenna plate. Working with the IMU has been a challenge, as drift in the output persists to be an issue. In the future, I am planning to replace the IMU with a mechanical feedback that does not have the drift issues.</p>
+
+      <h3>4. Laser communication device</h3>
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/dialup1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
+            <img src="{{ "/images/dialup1.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Chat GUI developed in Meteor. Very professional test messages.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/dialup2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
+            <img src="{{ "/images/dialup2.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Early testing of two transceivers we built.</figcaption>
+        </figure>
+      </div>
+      <p>Lead team of three students that built a laser transceiver capable of transmission rates of up to 0.7kB/s, close to the theoretically determined limit. The project led to an invitation for presentation at <a href="http://iemcon.org/">IEMCON 2016</a>.</p>
+      <p>The device was built using an inexpensive laser emitter and a photodiode (combined price &#60;1$) and an Arduino. Initially, we built a prototype and tested the idea for feasibility which was successful. Following that, we built the actual devices and then wrote our own communication protocol. The device is able to automatically detect start-message and end-message signatures due to a predetermined baud rate agreed upon by both the sending and receiving device. It also includes robust error detection, such as the detection of interrupted messages and improper message encoding.</p>
+
+      <p>As a user interface, we developed a Meteor app which serves as the chat server and provides a GUI (seen in image above). The chat was reliable over distances of up to 10m. Entire paragraphs could be sent in less than the blink of an eye. The source code is available on github at <a href="https://github.com/sbambey/DialUp" target="_blank">https://github.com/sbambey/DialUp</a>. The final report is available <a href="https://docs.google.com/document/d/1BUUs97jAzEOr9gzTnUQe3K5y5Hn1VIUkkrgJbpcKyLc/edit?usp=sharing">here</a>.</p>
+    </section>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+      <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+              <!--  Controls are self-explanatory. Order can be changed. -->
+
+              <div class="pswp__counter"></div>
+
+              <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+              <button class="pswp__button pswp__button--share" title="Share"></button>
+
+              <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+              <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+              <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+              <!-- element will get class pswp__preloader--active when preloader is running -->
+              <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                    <div class="pswp__preloader__cut">
+                      <div class="pswp__preloader__donut"></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+              <div class="pswp__share-tooltip"></div> 
+          </div>
+
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+
+          <div class="pswp__caption">
+              <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    {% include footer.html %}
   </body>
 </html>

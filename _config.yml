@@ -18,8 +18,14 @@ email: sbambey@gmail.com
 description: Projects
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-twitter_username: simonbambey
-github_username:  sbambey
+
+social:
+  github:
+    slug: github
+    link: http://github.com/sbambey
+  linkedin:
+    slug: linkedin
+    link: http://linkedin.com/in/sbambey
 
 # Build settings
 markdown: kramdown
