@@ -1,0 +1,30 @@
+<header class="site-header">
+
+  <div class="container txt-center">
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Projects</a></li>
+        <li class="m-left"><a href="http://www.simonbambey.com" target="_blank">Blog</a></li>
+        <!--<li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="icon icon-feed"></i> feed</a></li>-->
+      </ul>
+    </nav>
+
+    <a href="{{ "/" | prepend: site.baseurl }}" class="author-thumb">
+      <img src="{{ "/images/author1.jpg" | prepend: site.baseurl }}" alt="Author thumbnail" class="dot">
+    </a>
+    <h1>Simon Bambey <small>UBC Engineering Physics</small></h1>
+
+    <ul class="social">
+      {% for item in site.social %}
+        {% for i in item %}
+          <li><a href="{{ i.link }}" target="_blank"><i class="icon icon-{{ i.slug }}"></i></a></li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+    <small>Captain, <a href="http://www.ubcrocket.com" target="_blank">UBC Rocket</a></small>
+    <hr class="hr">
+
+  </div>
+
+</header>

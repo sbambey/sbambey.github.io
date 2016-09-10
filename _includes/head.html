@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ site.title }} | {{ site.description }}</title>
+
+<meta name="description" content="{{ page_description }}">
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.meta_keywords }}{% endif %}">
+
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?">
+
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+<link href="dist/photoswipe.css?v=4.1.1-1.0.4" rel="stylesheet" />
+<link href="dist/default-skin/default-skin.css?v=4.1.1-1.0.4" rel="stylesheet" />
+
+<script src="dist/photoswipe.min.js?v=4.1.1-1.0.4"></script>
+<script src="dist/photoswipe-ui-default.min.js?v=4.1.1-1.0.4"></script>
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />

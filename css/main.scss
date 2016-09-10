@@ -4,11 +4,14 @@
 @charset "utf-8";
 
 @import "test";
-
-.content {
-  width: 80%;
-  margin: 0 auto;
-}
+@import "variables";
+@import "mixins";
+@import "placeholders";
+@import "reset";
+@import "base";
+@import "layout";
+@import "icons";
+@import "syntax-highlighting";
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -41,6 +44,3 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-
-// Import partials from the `minima` theme.
-@import "minima";
