@@ -29,9 +29,32 @@
           </a>
           <figcaption itemprop="caption description">Early testing of two transceivers we built.</figcaption>
         </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/dialup3.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
+            <img src="{{ "/images/dialup3.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Photodiode response to laser flashing at 10kHz (each horiz. increment represents 100ms)</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/dialup4.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
+            <img src="{{ "/images/dialup4.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Front-end logic diagram (Written in Javascript using Meteor Framework)</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/dialup5.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
+            <img src="{{ "/images/dialup5.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Back-end logic diagram (Transceiver logic, written in C using Arduino Framework)</figcaption>
+        </figure>
       </div>
       <p>Led team of three students that built a laser transceiver capable of transmission rates of up to 0.7kB/s, close to the theoretically determined limit. The project led to an invitation for presentation at <a href="http://iemcon.org/">IEMCON 2016</a>.</p>
-      <p>The device was built using an inexpensive laser emitter and a photodiode (combined price &#60;1$) and an Arduino. Initially, we built a prototype and tested the idea for feasibility which was successful. Following that, we built the actual devices and then wrote our own communication protocol. The device is able to automatically detect start-message and end-message signatures due to a predetermined baud rate agreed upon by both the sending and receiving device. It also includes robust error detection, such as the detection of interrupted messages and improper message encoding.</p>
+      <p>The device was built using an inexpensive laser emitter and a photodiode (combined price &#60;1$) and an Arduino. Initially, I built a prototype and tested the idea for feasibility which was successful. Following that, I built the actual devices and then wrote a custom communication protocol in C (Arduino Framework). The devices are able to automatically detect start-message and end-message signatures due to a predetermined baud rate agreed upon by both the sending and receiving device. It also includes robust error detection, such as the detection of interrupted messages and improper message encoding.</p>
+
+      <p>Over the span of several weeks, I optimized the code to push the transmission rate close to the theoretical limit. Due to inherent delays in the Arduino code-base, I utilized the AVR language to optimize certain functions to speed them up for our use case. Furthermore, due to the fact that the device operates at a frequency much higher than what could be picked up by the human eye, I developed custom code to analyze test runs. The project involved many more challenges that were resolved by doing a lot of testing of the transceiver and carefully analyzing the test run data.</p>
 
       <p>As a user interface, we developed a Meteor app which serves as the chat server and provides a GUI (seen in image above). The chat was reliable over distances of up to 10m. Entire paragraphs could be sent in less than the blink of an eye. The source code is available on github at <a href="https://github.com/sbambey/DialUp" target="_blank">https://github.com/sbambey/DialUp</a>. The final report is available <a href="https://docs.google.com/document/d/1BUUs97jAzEOr9gzTnUQe3K5y5Hn1VIUkkrgJbpcKyLc/edit?usp=sharing">here</a>.</p>
 
@@ -76,7 +99,11 @@
           <figcaption itemprop="caption description">Pilot sign-up form - Log of pilot licenses and ratings</figcaption>
         </figure>
       </div>
-      <p>flightcrew.io is a job board written in Ruby on Rails, that automatically matches pilots with jobs appropriate for their experience level. The functionality includes a detailed sign up system which allows users to enter their qualifications such as flight hours, licenses, ratings and more. A comprehensive matching algorithmn then matches pilots with jobs they are eligible for. Furthermore, there is an extensive back-end for adding jobs and finding updates to job postings on external sites. The source code is available on github at <a href="https://github.com/sbambey/flightcrew" target="_blank">https://github.com/sbambey/flightcrew</a> and a live demo can be seen at <a href="https://safe-forest-2459.herokuapp.com/" target="_blank">https://safe-forest-2459.herokuapp.com/</a> (may take a few seconds to load).</p>
+      <p>flightcrew.io is a job board that I developed in Ruby on Rails. It automatically matches pilots with jobs appropriate for their experience level. The project was mainly meant to be a way for me to learn proper web development skills, to be exciting to me personally and to provide value to some users. The functionality includes a detailed sign up system which allows users to enter their qualifications such as flight hours, licenses, ratings and more. A comprehensive matching algorithmn I developed, then matches pilots with jobs they are eligible for. Furthermore, I created an extensive back-end for adding and updating jobs on the site.</p>
+
+      <p>A significant challenge was keeping up with a very large number of data sources (pilot job sources). To assist me, I developed automatic tasks that would update an internal database of all jobs and alert me when job pages had been updated. This would direct my attention and effort in the right places and allowed me to keep flightcrew.io up to date.</p>
+
+      <p>The source code is available on github at <a href="https://github.com/sbambey/flightcrew" target="_blank">https://github.com/sbambey/flightcrew</a> and a live demo can be seen at <a href="https://safe-forest-2459.herokuapp.com/" target="_blank">https://safe-forest-2459.herokuapp.com/</a> (may take a few seconds to load).</p>
 
       <h3>4. manifest.space</h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
