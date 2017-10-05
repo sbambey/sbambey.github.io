@@ -1,4 +1,5 @@
 ---
+description: Projects
 ---
 
 <!DOCTYPE html>
@@ -9,12 +10,101 @@
   </head>
   <body>
     {% include header.html %}
+    <br><br>
+    <div class="container site-header txt-center">
+      <a href="{{ "/" | prepend: site.baseurl }}" class="author-thumb">
+        <img src="{{ "/images/author1.jpg" | prepend: site.baseurl }}" alt="Author thumbnail" class="dot">
+      </a>
+      <h1>Simon Bambey <small>UBC Engineering Physics (Year 3)</small></h1>
+      <small>Captain, <a href="http://www.ubcrocket.com" target="_blank">UBC Rocket</a></small>
+
+      <ul class="social">
+        {% for item in site.social %}
+          {% for i in item %}
+            <li><a href="{{ i.link }}" target="_blank"><i class="icon icon-{{ i.slug }}"></i></a></li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+      
+      <hr class="hr">
+    </div>
 
     <section class="container project">
 
       <h2 class="project">Project Showcase</h2>
 
-      <h3>1. Laser communication device</h3>
+      <h3>1. UBC Rocket's Cypress (Role: Team Captain + Project Manager)</h3>
+
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/simon_rocket.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1333x2000">
+            <img src="{{ "/images/simon_rocket.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Rocket shortly before being shipped to competition and me =)</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/cypress_overview.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1539x2000">
+            <img src="{{ "/images/cypress_overview.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Overview of the Cypress Rocket.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/rocket_launch.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
+            <img src="{{ "/images/rocket_launch.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Cypress on the launch rail. T-30 minutes to liftoff.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/avionics_inspection.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
+            <img src="{{ "/images/avionics_inspection.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Conducting pre-flight checklist, confirming avionics and recovery system is armed.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/post_touchdown.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1125">
+            <img src="{{ "/images/post_touchdown.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Cypress recovery after successful flight to 10,053ft.</figcaption>
+        </figure>
+      </div>
+
+      <p>In the summer of 2016, I founded the <a href="http://www.ubcrocket.com/" target="_blank">UBC Rocket</a> Engineering Design Team which designs, manufactures and launches sounding rockets. Currently we compete yearly in the <a href="http://www.soundingrocket.org/2017-irec.html" target="_blank">Intercollegiate Rocket Engineering Competition</a>, also known as the Spaceport America Cup. The three-year goal of our team is to send a rocket above the Kármán line using a liquid-propellant rocket engine.</p>
+
+      <p>Between September and June of the past school year we built Cypress, our first rocket, with the goal of launching it to 10,000ft. Cypress was built from scratch in house with only rule-mandated recovery electronics and the rocket motor having been acquired off the shelf. After months of working late nights, a long roadtrip to New Mexico and final launch preparations in the Chihuahuan Desert, Cypresss successfully launched on June 24, 2017 at Spaceport America. <a href="https://www.youtube.com/watch?v=kHUHS2hg2zs" target="_blank">The flight</a> went exceptionally well and secured our team a <strong>first place finish</strong> in the most competitive category of the competition.</p>
+
+      <p>Within one year, UBC Rocket has grown to be the largest and most popular Engineering Design Team at UBC. We are currently 100 members strong and are working on upgrades for Cypress, as well as three new rockets. In addition, we are conducting R&D towards a liquid-propellant rocket engine and appropriate test stand.</p>
+
+      <strong><a href="cypress.html" class="link-highlight">Read more about Cypress, and my roles & responsibilities on UBC Rocket</a></strong>
+
+      <h3>2. Competition Robot</h3>
+
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/robot.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
+            <img src="{{ "/images/robot.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Our team's robot named "MVP" for Minimum Viable Product. We designed it to be simple, modular and reliable. The body is made of laser-cut hardboard. Some of the parts were 3D printed or water-jet cut.</figcaption>
+        </figure>
+      </div>
+
+      <p>As part of the engineering physics summer program, I spent about 6 weeks developing a robot full-time with a group of three other friends. The robot competed in a competition between all second-year engineering physics students. The robot was built entirely from scratch by our team.</p>
+
+      <p>The competition included a track that needed to be traversed, marked by a dark line. IR signals "locked" gates when oscillating at certain frequencies. Once at the end of the track, up to six small toys needed to be rescued from little platforms above a water bucket. Once rescued these pets had to be attached to a metal bar "zipline" to return to safety.</p>
+
+      <p>I had multiple roles on the team. My primary task was to design, build and test the elevator and bucket mechanism used to store the rescued pets and bring them safely home (seen on right hand side of robot). I manufactured the parts using a laser cutter, 3D printers and a water jet cutter. A challenge we faced was accurately detecting when the robot is close to the zipline. To overcome this problem completely, I designed the elevator such that it can be raised and the robot simply needs to drive under the zipline and the bucket fall off passively and rolls to safety. No zipline detection required.</p>
+
+      <p>Given my prior manufacturing experience, I also manufactured a large number of parts for all areas of the robot. Often an item would be designed by a team member and I would review and manufacture it, mostly using 3D printers and laser cutters.</p>
+
+      <p>In addition, I made significant contributions to simplifying the internal configuration of the robot. I made the LCD display visible from the outside and added buttons and a potentiometer to allow for quickly adjusting robot settings when testing. This saved us many hours of having to open/close the robot panels.</p>
+
+      <p>My final significant contribution to the project was on the software side. As the robot was close to its final form, I was responsible for extensively testing the robot on the practise track. Many subtle bugs came up which were systematically solved by exposing the robot to all possible test scenarios and failure modes.</p>
+
+
+      <h3>3. Laser Communication Device</h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/dialup1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
@@ -51,14 +141,15 @@
           <figcaption itemprop="caption description">Back-end logic diagram (Transceiver logic, written in C using Arduino Framework)</figcaption>
         </figure>
       </div>
-      <p>Led team of three students that built a laser transceiver capable of transmission rates of up to 0.7kB/s, close to the theoretically determined limit. The project led to an invitation for presentation at <a href="http://iemcon.org/">IEMCON 2016</a>.</p>
+      <p>Led team of three students that built a laser transceiver capable of transmission rates of up to 0.7kB/s, close to the theoretically determined limit for the hardware used. The project led to an invitation for presentation at <a href="http://iemcon.org/">IEMCON 2016</a>.</p>
+
       <p>The device was built using an inexpensive laser emitter and a photodiode (combined price &#60;1$) and an Arduino. Initially, I built a prototype and tested the idea for feasibility which was successful. Following that, I built the actual devices and then wrote a custom communication protocol in C (Arduino Framework). The devices are able to automatically detect start-message and end-message signatures due to a predetermined baud rate agreed upon by both the sending and receiving device. It also includes robust error detection, such as the detection of interrupted messages and improper message encoding.</p>
 
       <p>Over the span of several weeks, I optimized the code to push the transmission rate close to the theoretical limit. Due to inherent delays in the Arduino code-base, I utilized the AVR language to optimize certain functions to speed them up for our use case. Furthermore, due to the fact that the device operates at a frequency much higher than what could be picked up by the human eye, I developed custom code to analyze test runs. The project involved many more challenges that were resolved by doing a lot of testing of the transceiver and carefully analyzing the test run data.</p>
 
-      <p>As a user interface, we developed a Meteor app which serves as the chat server and provides a GUI (seen in image above). The chat was reliable over distances of up to 10m. Entire paragraphs could be sent in less than the blink of an eye. The source code is available on github at <a href="https://github.com/sbambey/DialUp" target="_blank">https://github.com/sbambey/DialUp</a>. The final report is available <a href="https://docs.google.com/document/d/1BUUs97jAzEOr9gzTnUQe3K5y5Hn1VIUkkrgJbpcKyLc/edit?usp=sharing">here</a>.</p>
+      <p>As a user interface, we developed a Meteor app which serves as the chat server and provides a GUI (seen in image above). The chat was reliable over distances of up to 10m. Entire paragraphs could be sent in less than the blink of an eye. The source code is available on <a href="https://github.com/sbambey/DialUp" target="_blank">GitHub</a>. The final report is available <a href="https://docs.google.com/document/d/1BUUs97jAzEOr9gzTnUQe3K5y5Hn1VIUkkrgJbpcKyLc/edit?usp=sharing">here</a>.</p>
 
-      <h3>2. Antenna tracker for Unmanned Aircraft Systems</h3>
+      <h3>4. Antenna Tracker for Unmanned Aircraft Systems</h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/tracker2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1000x1500">
@@ -75,7 +166,7 @@
       </div>
       <p>As part of the Unmanned Aircraft Systems (UAS) Engineering Design Team at UBC, I developed the electronics and software and assisted with the mechanical build for an antenna tracker. The tracker software interfaces with the drone using a protocol called Mavlink and receives live telemetry. It then calculates a yaw and a pitch angle for the antenna and drives two stepper motors in the appropriate directions. The motors were initially controlled by two inexpensive stepper motor drivers that gave us some trouble. The team then received <a href="http://www.zaber.com/products/product_group.php?group=X-MCB2" target="_blank">a high-end stepper motor controller</a> which I integrated into the tracker. Feedback on the actual position of the antenna is provided by an Inertial Measurement Unit (IMU) mounted to the antenna plate. Working with the IMU has been a challenge, as drift in the output persists to be an issue. In the future, I am planning to replace the IMU with a mechanical feedback that does not have the drift issues.</p>
 
-      <h3>3. flightcrew.io</h3>
+      <h3>5. flightcrew.io <small>(not actively maintained)</small></h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/flightcrew1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
@@ -109,9 +200,9 @@
 
       <p>A significant challenge was keeping up with a very large number of data sources (pilot job sources). To assist me, I developed automatic tasks that would update an internal database of all jobs and alert me when job pages had been updated. This would direct my attention and effort in the right places and allowed me to keep flightcrew.io up to date.</p>
 
-      <p>The source code is available on github at <a href="https://github.com/sbambey/flightcrew" target="_blank">https://github.com/sbambey/flightcrew</a> and a live demo can be seen at <a href="https://safe-forest-2459.herokuapp.com/" target="_blank">https://safe-forest-2459.herokuapp.com/</a> (may take a few seconds to load).</p>
+      <p>The source code is available on <a href="https://github.com/sbambey/flightcrew" target="_blank">GitHub</a> and a live demo can be seen hosted on <a href="https://safe-forest-2459.herokuapp.com/" target="_blank">Heroku</a> (may take a few seconds to load).</p>
 
-      <h3>4. manifest.space</h3>
+      <h3>6. manifest.space <small>(not actively maintained)</small></h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/manifest1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
@@ -134,75 +225,9 @@
           <figcaption itemprop="caption description">Launch Details and Media</figcaption>
         </figure>
       </div>
-      <p>manifest.space is a log of some of SpaceX's launches. It is a passion project for me and I occassionally find time to update it. The project is a Ruby on Rails app and is a great way for me to fiddle with different libraries and tools. In the early phases, I collaborated with some other people over the internet and as a result, I developed a basic revision tracking system available through the admin panel and integrated a markdown editor. The source code is available on github at <a href="https://github.com/sbambey/manifest" target="_blank">https://github.com/sbambey/manifest</a> and a live demo can be seen at <a href="http://www.manifest.space" target="_blank">http://www.manifest.space</a> (may take a few seconds to load).</p>
-
-      
-
+      <p>manifest.space is a log of some of SpaceX's launches. It is a passion project for me and I occassionally find time to update it. The project is a Ruby on Rails app and is a great way for me to fiddle with different libraries and tools. In the early phases, I collaborated with some other people over the internet and as a result, I developed a basic revision tracking system available through the admin panel and integrated a markdown editor. The source code is available on <a href="https://github.com/sbambey/manifest" target="_blank">GitHub</a> and a live demo can be seen hosted on <a href="https://secret-sands-2898.herokuapp.com/providers/spacex/completed" target="_blank">Heroku</a> (may take a few seconds to load).</p>
       
     </section>
-
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-      <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-          <div class="pswp__top-bar">
-
-              <!--  Controls are self-explanatory. Order can be changed. -->
-
-              <div class="pswp__counter"></div>
-
-              <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-              <button class="pswp__button pswp__button--share" title="Share"></button>
-
-              <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-              <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-              <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-              <!-- element will get class pswp__preloader--active when preloader is running -->
-              <div class="pswp__preloader">
-                  <div class="pswp__preloader__icn">
-                    <div class="pswp__preloader__cut">
-                      <div class="pswp__preloader__donut"></div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-              <div class="pswp__share-tooltip"></div> 
-          </div>
-
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-          </button>
-
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-          </button>
-
-          <div class="pswp__caption">
-              <div class="pswp__caption__center"></div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     {% include footer.html %}
   </body>

@@ -1,0 +1,136 @@
+---
+description: Cypress
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+
+  </head>
+  <body>
+
+    {% include header.html %}
+
+    <div class="container txt-center site-header">
+
+      <img src="images/ubc_rocket.jpg" class="title-image" alt="Team holding rocket at competition" />
+
+      <h1>Cypress Rocket</h1>
+      <small>Project Manager</small>
+    </div>
+
+    <section class="container project">
+      <br>
+      <div class="txt-center">
+        <ul>
+          <li>1. <a href="#overview">Overview</a></li>
+          <li>2. <a href="#cypress">A Closer Look at Cypress</a></li>
+          <li>3. <a href="#next">What's Next</a></li>
+        </ul>
+      </div>
+
+      <h3 id="overview">Overview</h3>
+
+      <p>For the past year UBC Rocket has been an integral part of my life. After being inspired by Elon Musk's and SpaceX's vision and realizing that UBC had no rocketry team, I decided to start a team at UBC. The team quickly grew to 65 students. Over the span of the year,  I spent increasingly more time on rocket related work. In the months leading up to competition, every night and all weekends were dedicated to making our first competition entry a success.</p>
+
+      <p>I was both acting as the co-captain of the team and the project manager for our first rocket, Cypress. This means that I was both responsible for overall team direction, adminstrative work, as well as being heavily involved in all technical areas of the rocket.</p>
+
+      <p>On the technical side, my primary responsibility was the overall technical management of the rocket. This started by ensuring an effective breakdown of work by subteam. Following this, I worked closely with all subteams, ensuring that a proper design approach was followed including requirements analysis, preliminary & critical design reviews, component manufacturing and testing, and integration testing.</p>
+
+      <p>I also worked as needed on many of the projects that made up Cypress. I analysed the mission and trajectory, derived core rocket specs such as motor thrust, dimensions and mass, did carbon fibre layups using vacuum bagging, extensively used and troubleshot various 3D printers, learned detailed 3D modeling using OnShape, manufactured a significant portion of rocket internal components using the waterjet, lathes, mills and drill presses (several hundreds of hours), designed and built circuitry for recovery system testing using a Teensy microcontroller, procured the large majority of UBC Rocket's components and raw materials and much more. More info can be seen below in <a href="#cypress">A Closer Look</a>.</p>
+
+      <p>Besides the technical work, I was also heavily involved in the admin side of the team. Being a new team, vision and direction was very important. Other team members looked to me for direction and motivation and I put significant effort into making sure that every work session was well organized and prepared. In addition, early in the team's existence, I heavily focused on raising the necessary funds for the team's success. This led me to raise the majority of our ~$30,000 budget. In addition, I was the point of contact for any issues that came up, including technical challenges, management challenges, and interpersonal issues. This allowed me to grow immensely on a professional level and further taught me what works and what doesn't work in a leadership role.</p>
+
+      <h3 id="cypress">A Closer Look</h3>
+
+      <p>Click on images for more details.</p>
+
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+        <!--<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/lower_upper.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
+            <img src="{{ "/images/lower_upper.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Final iteration of our lower and upper body tubes made of carbon fibre. Lower body tube already had the aluminum tube coupler permanently epoxied inside but was still missing the fins. The upper body tube still needed to be appropriately cut to length.</figcaption>
+        </figure>-->
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/upper.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
+            <img src="{{ "/images/upper.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Upper body section after having flown to 10,000ft. Made of 8 layers of carbon fibre. Quasi-isotropic laminate. Houses the entire upper assembly including payload, payload bay, avionics bay and recovery parachutes.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/lower.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
+            <img src="{{ "/images/lower.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Lower body section after having flown to 10,000ft. Made of carbon fibre with airfoil shape fins. Fins have 3D printed plastic core overlaid with carbon fibre. Houses the motor assembly and motor used to propel the rocket.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/motor.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
+            <img src="{{ "/images/motor.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Motor mount and motor casing. The mount was precisely machined to fit the case and to fit in the lower body section. Manufactured using the water jet, lathe and milling machine. Removing the end plate allows for quick removal of the rocket motor when integrated into the rocket.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/nosecone.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
+            <img src="{{ "/images/nosecone.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">3D printed ABS nose cone. The entire upper, aerodynamic section of the nose cone was printed in one continuous six-and-a-half day print. It was sanded, coated and painted afterwards. Also visible is the GoPro camera window allowing for on-board video capture.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/before_painting.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
+            <img src="{{ "/images/before_painting.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Rocket being inspected after first full integration. All that was missing was the final coat of paint.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/lower_assembly.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
+            <img src="{{ "/images/lower_assembly.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Lower assembly and motor integration. Tight tolerances are important to ensure a proper thrust vector and to curb vibrations.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/avionics_recovery.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
+            <img src="{{ "/images/avionics_recovery.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Final integration of the recovery system and avionics at competition. The recovery, avionics and payload bay are all attached to one another outside the rocket before being integrated as one into the upper body tube.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/final_integration.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1600x1069">
+            <img src="{{ "/images/final_integration.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">The rocket shortly before being prepared for shipment to the launch rail. Motor and motor assembly integrated, recovery system integrated and ready to be armed, payload being prepared for integration. T-2 hours.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/launch_ship.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1500">
+            <img src="{{ "/images/launch_ship.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Fully assembled rocket, payload on board, all systems go, ready for shipment to the launch rail. T-1 hour. </figcaption>
+        </figure>
+      </div>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tgLoVDTVPPo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wF_qQ271pEs?rel=0" frameborder="0" allowfullscreen></iframe>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kHUHS2hg2zs?rel=0" frameborder="0" allowfullscreen></iframe>
+
+      <h3 id="next">What's next</h3>
+
+      <p>We are just starting out on this year's projects. We had immense interest in UBC Rocket and grew to a team of 100, now the largest Engineering Design Team at UBC. Luckily we have many, amazing returning members who are taking on leadership roles, so that we can focus on several ambitious projects. These include upgrading Cypress for rapid relaunch, building a new 10k (10,000ft apogee) rocket, a 30k rocket and also starting R&D towards our space rocket. The R&D team is building a high altitude demonstrator rocket and working on a liquid-propellant rocket engine.</p>
+      
+    </section>
+
+    {% include footer.html %}
+  </body>
+</html>

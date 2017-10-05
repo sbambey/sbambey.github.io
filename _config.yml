@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Simon Bambey
 email: sbambey@gmail.com
-description: Projects
+#description: Projects
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
