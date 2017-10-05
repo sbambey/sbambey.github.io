@@ -30,7 +30,7 @@
 }
 
 .toc {
-  width: 235px;
+  width: 340px;
   margin: 10px auto 10px auto;
 }
 
@@ -40,4 +40,13 @@ h3 {
 
 .link-highlight, .link-highlight:hover {
   color: #D62828;
+}
+
+.list {
+  margin-left: 40px;
+}
+
+ul > li {
+  margin-left: 20px;
+  list-style-type: circle;
 }

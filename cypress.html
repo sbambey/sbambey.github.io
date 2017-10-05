@@ -22,38 +22,71 @@ description: Cypress
 
     <section class="container project">
       <br>
-      <div class="txt-center">
-        <ul>
-          <li>1. <a href="#overview">Overview</a></li>
-          <li>2. <a href="#cypress">A Closer Look at Cypress</a></li>
-          <li>3. <a href="#next">What's Next</a></li>
-        </ul>
-      </div>
+      <ul class="toc">
+        <li>1. <a href="#overview">Overview</a></li>
+        <li>2. <a href="#cypress">My Technical Contribution</a></li>
+          <ul class="list">
+            <li><a href="#analysis">Rocket & Flight Analysis</a></li>
+            <li><a href="#body">Carbon Fibre Rocket Body</a></li>
+            <li><a href="#nose">3D Printed Nose Cone</a></li>
+            <li><a href="#inner">Inner Aluminum Assembly</a></li>
+            <li><a href="#recovery">Recovery System</a></li>
+            <li><a href="#integration">Integration & Testing Of Rocket</a></li>
+          </ul>
+        <li>3. <a href="#next">What's Next</a></li>
+      </ul>
 
       <h3 id="overview">Overview</h3>
 
       <p>For the past year UBC Rocket has been an integral part of my life. After being inspired by Elon Musk's and SpaceX's vision and realizing that UBC had no rocketry team, I decided to start a team at UBC. The team quickly grew to 65 students. Over the span of the year,  I spent increasingly more time on rocket related work. In the months leading up to competition, every night and all weekends were dedicated to making our first competition entry a success.</p>
 
-      <p>I was both acting as the co-captain of the team and the project manager for our first rocket, Cypress. This means that I was both responsible for overall team direction, adminstrative work, as well as being heavily involved in all technical areas of the rocket.</p>
+      <p>I was both acting as the co-captain of the team and the project manager for our first rocket, Cypress. This means that I was both responsible for overall team direction, adminstrative work, as well as being heavily involved in all technical areas of the rocket. Especially neing a new team, vision and direction was very important. Other team members looked to me for direction and motivation and I put significant effort into making sure that every work session was well organized and prepared. I was also the point of contact for any issues that came up, including technical challenges, management challenges, and interpersonal issues. This allowed me to grow immensely on a professional level.</p>
 
-      <p>On the technical side, my primary responsibility was the overall technical management of the rocket. This started by ensuring an effective breakdown of work by subteam. Following this, I worked closely with all subteams, ensuring that a proper design approach was followed including requirements analysis, preliminary & critical design reviews, component manufacturing and testing, and integration testing.</p>
+      The following are the technical projects I led or was heavily involved with. For details on each, refer to <a href="#cypress">My Technical Contribution</a>.
+      <div class="list">
+        <li>Rocket & Flight Analysis,</li>
+        <li>Carbon Fibre Rocket Body, </li>
+        <li>3D Printed Nose Cone, </li>
+        <li>Inner Aluminum Assembly, </li>
+        <li>Recovery System, and </li>
+        <li>Integration & Testing Of Rocket.</li>
+      </div>
+
+      <p>In addition to the technical work above, I also raised the majority of our team's funding needs. We budgeted $30,000 in total expenses and raised the full amount. The budget was accurate and allowed our team to buy equipment, all materials needed for rocket construction and allow 20 members to attend competition.</p>
+
+      <!--<p>On the technical side, my primary responsibility was the overall technical management of the rocket. This started by ensuring an effective breakdown of work by subteam. Following this, I worked closely with all subteams, ensuring that a proper design approach was followed including requirements analysis, preliminary & critical design reviews, component manufacturing and testing, and integration testing.</p>
 
       <p>I also worked as needed on many of the projects that made up Cypress. I analysed the mission and trajectory, derived core rocket specs such as motor thrust, dimensions and mass, did carbon fibre layups using vacuum bagging, extensively used and troubleshot various 3D printers, learned detailed 3D modeling using OnShape, manufactured a significant portion of rocket internal components using the waterjet, lathes, mills and drill presses (several hundreds of hours), designed and built circuitry for recovery system testing using a Teensy microcontroller, procured the large majority of UBC Rocket's components and raw materials and much more. More info can be seen below in <a href="#cypress">A Closer Look</a>.</p>
 
-      <p>Besides the technical work, I was also heavily involved in the admin side of the team. Being a new team, vision and direction was very important. Other team members looked to me for direction and motivation and I put significant effort into making sure that every work session was well organized and prepared. In addition, early in the team's existence, I heavily focused on raising the necessary funds for the team's success. This led me to raise the majority of our ~$30,000 budget. In addition, I was the point of contact for any issues that came up, including technical challenges, management challenges, and interpersonal issues. This allowed me to grow immensely on a professional level and further taught me what works and what doesn't work in a leadership role.</p>
+      <p>Besides the technical work, I was also heavily involved in the admin side of the team. Being a new team, vision and direction was very important. Other team members looked to me for direction and motivation and I put significant effort into making sure that every work session was well organized and prepared. In addition, early in the team's existence, I heavily focused on raising the necessary funds for the team's success. This led me to raise the majority of our ~$30,000 budget. In addition, I was the point of contact for any issues that came up, including technical challenges, management challenges, and interpersonal issues. This allowed me to grow immensely on a professional level and further taught me what works and what doesn't work in a leadership role.</p>-->
 
-      <h3 id="cypress">A Closer Look</h3>
+      <h3 id="cypress">My Technical Contribution <small>Click on images for more details</small></h3>
 
-      <p>Click on images for more details.</p>
+      <h4 id="analysis">Rocket & Flight Analysis</h4>
+
+      <p>The goal of our rocket was to fly to exactly 10,000ft. To accomplish this, we determined that we could either design our rocket and subsequently pick an appropriate engine or we could pick an engine and build our rocket around it. I conducted a trade-off study and determined that we would pick an engine first because of the limited options of engines (=> limited options of net impulse) available and the fact that solid rocket motor availability from the most reliable supplier was limited.</p>
+
+      <p>To ensure that our motor would definitely fit our needs, I created a simplistic, conservative model of rocket shape and mass and picked an engine that added a buffer of 20% in terms of performance in addition to the conservative numbers. In addition, I had to ensure that the motor would not overly constrain our design (e.g. loads would not be unreasonable) and that it would provide adequate acceleration to the launch vehicle to meet competition requirements.</p>
+
+      <p>This work was done using a combination of theoretical calculations and analysis using a rocket specific analysis software called RockSim. All simulations were confirmed using a second rocket analysis software called OpenRocket.</p>
+
+
+      <h4 id="body">Carbon Fibre Rocket Body</h4>
 
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-        <!--<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/lower_upper.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
-            <img src="{{ "/images/lower_upper.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/first_tube.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1250">
+            <img src="{{ "/images/first_tube.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
           </a>
-          <figcaption itemprop="caption description">Final iteration of our lower and upper body tubes made of carbon fibre. Lower body tube already had the aluminum tube coupler permanently epoxied inside but was still missing the fins. The upper body tube still needed to be appropriately cut to length.</figcaption>
-        </figure>-->
+          <figcaption itemprop="caption description">First rocket body tube layup after curing for 48 hours under vacuum just prior to unwrapping.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/final_tube.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1250">
+            <img src="{{ "/images/final_tube.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Final body tube right after having been unwrapped from the layup. Also seen is the lower retaining ring for the rocket motor. What followed was sanding, attachment of find, coating and finally paiting.</figcaption>
+        </figure>
 
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/upper.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
@@ -68,14 +101,18 @@ description: Cypress
           </a>
           <figcaption itemprop="caption description">Lower body section after having flown to 10,000ft. Made of carbon fibre with airfoil shape fins. Fins have 3D printed plastic core overlaid with carbon fibre. Houses the motor assembly and motor used to propel the rocket.</figcaption>
         </figure>
+      </div>
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/motor.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
-            <img src="{{ "/images/motor.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Motor mount and motor casing. The mount was precisely machined to fit the case and to fit in the lower body section. Manufactured using the water jet, lathe and milling machine. Removing the end plate allows for quick removal of the rocket motor when integrated into the rocket.</figcaption>
-        </figure>
+      <p>One of the first processes we had to gain familiarity with were carbon fibre layups. When we started out nobody on our team had significant experience with layups. I had some experience from a previous job doing patch jobs on a large, carbon fibre radio antenna dish, so I took it upon myself to get the work started. After researching differemt processes for making carbon fibre tubes, I decided to use vacuum bagging due to the availability of appropriate materials and equipment.</p>
 
+      <p>I organized our first layup, including the procurement of all essential materials and equipment and acquisition of a mandrel (initially one-time-use cardboard and later aluminum). Myself and three teammates built a 3 layer tube including two layers of carbon fibre and one layer of Kevlar. I learned several important lessons including the need for significant, evenly distributed tension when applying the carbon fibre sheets to avoid wrinkles, thorough wetting of the carbon fibre weave prior to applying it to the mandrel and the need for a reusable mandrel to ensure consistent tube geometry.</p>
+
+      <p>The team conducted at least five more tube layups, each time perfecting the technique a little further, reducing the amount of wrinkles and reducing the tube mass. I was involved as an advisor in the process. The last two layups resulted in our flight body tubes.</p>
+
+
+      <h4 id="nose">3D Printed Nose Cone</h4>
+
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/nosecone.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
             <img src="{{ "/images/nosecone.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
@@ -87,7 +124,33 @@ description: Cypress
           <a href="{{ "/images/before_painting.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
             <img src="{{ "/images/before_painting.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
           </a>
-          <figcaption itemprop="caption description">Rocket being inspected after first full integration. All that was missing was the final coat of paint.</figcaption>
+          <figcaption itemprop="caption description">Rocket being inspected after first full integration. Seen in the foreground is the flight nose cone. All that was missing was the final coat of paint.</figcaption>
+        </figure>
+      </div>
+
+      <p>I investigated different nose cone shapes for it aerodynamic properties, manufacturability and cost. Our team decided to design and manufacture a nose cone that followed a very precise profile known as LD-Haack. Because forming a mold for this shape would have been very difficult with the tools available to us, I decided to 3D print the nose cone. 3D printing the nose cone has a mass trade-off compared to, for example, a fibreglass nose cone but in theory it would be much simpler to manufacture.</p>
+
+      <p>We had a printer with a large bed and large vertical capacity, so after designing the nose cone according to the LD-Haack profile, I proceeded to print several iterations of the nose cone. I learned a lot about different 3D printing software available, and how different infill properties affect the strength and mass of the print. Given the six-and-a-half day duration of our print, we also ran into several issues with the printer such as burnt out stepper motors, excessive vibrations on the bed and belt skipping. I addressed all of these and successfully printed the flight nose cone and a backup.</p>
+
+      <p>After printing, the nose cone was sanded, coated in primer and painted.</p>
+
+      <p>If I had to redo the nose cone, I probably would not use 3D printing anymore because the time savings I was hoping for were never realized due to unexpected print failures. In future years, we will look towards laying up our nose cone as well using a mold. Building the mold will be a significant time investment but will be reusable afterwards.</p>
+
+      <h4 id="inner">Inner Aluminum Assembly</h4>
+
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/avionics_inspection.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
+            <img src="{{ "/images/avionics_inspection.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Upper inner assembly being inspected at competition. The top portion is the payload bay, the middle section the avionics bay and the bottom section the recovery bay.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/motor.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1500x2000">
+            <img src="{{ "/images/motor.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Motor mount and motor casing. The mount was precisely machined to fit the case and to fit in the lower body section. Manufactured using the water jet, lathe and milling machine. Removing the end plate allows for quick removal of the rocket motor when integrated into the rocket.</figcaption>
         </figure>
 
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -96,14 +159,34 @@ description: Cypress
           </a>
           <figcaption itemprop="caption description">Lower assembly and motor integration. Tight tolerances are important to ensure a proper thrust vector and to curb vibrations.</figcaption>
         </figure>
+      </div>
 
+      <p>The inner assembly of the rocket was largely made of aluminum. I machined a significant portion of the inner structure. In total I spent several hundred hours in the machine shop gaining significant experience using the water jet, laser cutter, lathe, mill, drill press and a large variety of hand tools.</p>
+
+      <p>The entire upper assembly is removable from the rocket for ease of integration of the payload, avionics and parachutes. It can be inserted and locked using a twist-and-lock system. To support this, I machined a thin-walled aluminum tube with two L-shaped slots that I permanently epoxied into the upper body tube. The thin walls made it very difficult to machine precisely because the part could easily be deformed by just clamping it improperly. I built wooden jigs that would provide adequate counter pressure to ensure this doesn't happen.</p>
+
+      <p>In addition, I machined several parts of the upper assembly, including centering rings, paylod bay rails, as well as machined a significant portion of the motor assembly. This meant machining parts to precise tolerances to allow them to be snugly integrated into the rocket. In addition, I drilled and tapped the large majority of bolt holes on the rocket for a wide variety of diameters. This had to be carefully done as some screws saw significant loading, so low quality taps could have led to failure.</p>
+
+      <h4 id="recovery">Recovery System</h4>
+
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/avionics_recovery.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
             <img src="{{ "/images/avionics_recovery.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
           </a>
-          <figcaption itemprop="caption description">Final integration of the recovery system and avionics at competition. The recovery, avionics and payload bay are all attached to one another outside the rocket before being integrated as one into the upper body tube.</figcaption>
+          <figcaption itemprop="caption description">Final integration of the recovery system at competition. Enclosed in red is the linear actuator activating the three-ring-release system for main parachute deployment.</figcaption>
         </figure>
+      </div>
 
+      <p>I had a significant role in designing and testing the recovery system. The recovery system includes two black-powder charges which are ignited using pyrotechnic ignitors, as well as a linear actuator. The black powder charges seperate the rocket body tubes and nose cone, allowing the payload to exit on one end and the main parachute to deploy on the other.</p>
+
+      <p>I designed the black powder mechanism, designed and machined the containers for the charges and determined the amount of black powder required given the internal volume and friction between the seperating pieces.</p>
+
+      <p>To release our large main parachute, a three-ring-release system, commonly used in parachuting, was chosen. This component is absolutely critical to a successful recovery of the rocket. I led the testing effort of this release mechanism by determining possible modes of operation and identifying failure modes. In addition, I designed and built the electronics that will permit for quickly-repeatable testing of the mechanism. Overall I conducted over thirty tests of the mechanism alongside the recovery team.</p>
+
+      <h4 id="integration">Integration & Testing Of Rocket</h4>
+
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/final_integration.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1600x1069">
             <img src="{{ "/images/final_integration.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
@@ -119,7 +202,13 @@ description: Cypress
         </figure>
       </div>
 
+      <p>I was responsible for the overall systems engineering effort of the rocket. As components were completed, I tested or oversaw testing of the large majority of them. The heaviest focus was on the parachute deployment testing. In order to test in a realistic environment, I built a drop-test article which consisted of a short tube section, a black powder charge, activation electronics and a parachute. This article was taken to a high bridge and dropped to test the deployment. The tests were very successful (see video).</p>
+
       <iframe width="560" height="315" src="https://www.youtube.com/embed/tgLoVDTVPPo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+      <p>In addition, to ensure appropriate adherence to our models, I weighed and modeled all components of the rocket as they were integrated. This allowed me to precisely confirm the weight and balance of the rocket to ensure stability and adherence to modeled flight characteristics. In the end our rocket flew to 10,053ft for a target apogee of 10,000ft. <strong>Cypress flew closest to its target apogee out of any rockets at competition.</strong></p>
+
+      <p>Lastly, I drafted integration documents and checklists to ensure that no steps were skipped at competition. This ensured that nothing would be forgotten in the heat of the moment. The checklists were useful and diligently followed and allowed us to have a smooth lead-up to our launch.</p>
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/wF_qQ271pEs?rel=0" frameborder="0" allowfullscreen></iframe>
 
