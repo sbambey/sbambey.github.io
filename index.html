@@ -33,7 +33,56 @@ description: Projects
 
       <h2 class="project">Project Showcase</h2>
 
-      <h3>1. UBC Rocket's Cypress (Role: Team Captain + Project Manager)</h3>
+      <h3>1. UBC Rocket 2017-present<br><small class="subtitle">Team Captain + Project Manager for liquid rocket engine and spaceshot rocket</small></h3>
+
+      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/whistler_render.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1920x1080">
+            <img src="{{ "/images/whistler_render.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Whistler Rocket Engine on mounting structure.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/nozzle_cutaway.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2088x1046">
+            <img src="{{ "/images/nozzle_cutaway.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Cutaway showing the internals of the Whistler Engine.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/whistler_assembled.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="3264x2448">
+            <img src="{{ "/images/whistler_assembled.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Whistler Liquid Bi-Propellant Engine assembled.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/whistler_parts.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="3264x2448">
+            <img src="{{ "/images/whistler_parts.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Whistler Liquid Bi-Propellant Engine taken apart.</figcaption>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="{{ "/images/nozzle_machining.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1500">
+            <img src="{{ "/images/nozzle_machining.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+          </a>
+          <figcaption itemprop="caption description">Whistler's nozzle being turned on a lathe. The nozzle was machined from a 60kg heavy solid piece of steel in four full days.</figcaption>
+        </figure>
+      </div>
+
+      <p>Since Sept 2017, I have been leading a team dubbed "Whistler-Blackcomb" as part of UBC Rocket. This team is the first step towards making our long term goal of sending a rocket to the edge of space become reality. The core technological challenge I identified is the propulsion system, hence it was the logical to start our efforts.</p>
+
+      <p>Initially, I led the team through a high level design process. This process yielded core engine parameters such as thrust (12.5kN), burn duration, combustion chamber pressure and more. I considered manufacturing and timeline constraints which led me to make the decision to initially build a heatsink engine to qualify our feed system, engine injector and performance measures. A heatsink engine requires the engine material to soak up the large majority of the generated heat energy.</p>
+
+      <p>The images seen above are of our first heatsink engine. It will provide sufficient thrust to power our rocket to over 100km in altitude (into space!). A large amount of the manufacturing work is being done by myself. The engine is made of solid steel bar, SCH160 steel pipe and 6061 aluminum. It is completely manufactured in house.</p>
+
+      <p>In addition to the engine, I am leading the design and development of the feed system for the engine including tanks, valves, sensors and other plumbing components. The design is complete and currently going through final review and approval before components will be procured and the system assembled.</p>
+
+      <p>We take our time to do things right, and safely, as a project of this caliber brings with it risks that need to be considered carefully. We are hopeful that a successful cold-flow qualification of the engine can occur this summer and that a hot fire will occur before the end of the year.</p>
+
+      <h3>2. UBC Rocket 2016-2017<br><small class="subtitle">Team Captain + Project Manager of team's first rocket: Cypress</small></h3>
 
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -80,7 +129,7 @@ description: Projects
 
       <strong><a href="cypress.html" class="link-highlight">Read more about my technical contributions to Cypress and role as team captain.</a></strong>
 
-      <h3>2. Competition Robot</h3>
+      <h3>3. Competition Robot</h3>
 
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -132,7 +181,7 @@ description: Projects
       <p>My final significant contribution to the project was on the software side. As the robot was close to its final form, I was responsible for extensively testing the robot on the practise track. Many subtle bugs came up which were systematically solved by exposing the robot to all possible test scenarios and failure modes.</p>
 
 
-      <h3>3. Laser Communication Device</h3>
+      <h3>4. Laser Communication Device</h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/dialup1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
@@ -177,7 +226,7 @@ description: Projects
 
       <p>As a user interface, we developed a Meteor app which serves as the chat server and provides a GUI (seen in image above). The chat was reliable over distances of up to 10m. Entire paragraphs could be sent in less than the blink of an eye. The source code is available on <a href="https://github.com/sbambey/DialUp" target="_blank">GitHub</a>. The final report is available <a href="https://docs.google.com/document/d/1BUUs97jAzEOr9gzTnUQe3K5y5Hn1VIUkkrgJbpcKyLc/edit?usp=sharing">here</a>.</p>
 
-      <h3>4. Antenna Tracker for Unmanned Aircraft Systems</h3>
+      <h3>5. Antenna Tracker for Unmanned Aircraft Systems</h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/tracker2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1000x1500">
@@ -194,7 +243,7 @@ description: Projects
       </div>
       <p>As part of the Unmanned Aircraft Systems (UAS) Engineering Design Team at UBC, I developed the electronics and software and assisted with the mechanical build for an antenna tracker. The tracker software interfaces with the drone using a protocol called Mavlink and receives live telemetry. It then calculates a yaw and a pitch angle for the antenna and drives two stepper motors in the appropriate directions. The motors were initially controlled by two inexpensive stepper motor drivers that gave us some trouble. The team then received <a href="http://www.zaber.com/products/product_group.php?group=X-MCB2" target="_blank">a high-end stepper motor controller</a> which I integrated into the tracker. Feedback on the actual position of the antenna is provided by an Inertial Measurement Unit (IMU) mounted to the antenna plate. Working with the IMU has been a challenge, as drift in the output persists to be an issue. In the future, I am planning to replace the IMU with a mechanical feedback that does not have the drift issues.</p>
 
-      <h3>5. flightcrew.io <small>(not actively maintained)</small></h3>
+      <h3>6. flightcrew.io <small>(not actively maintained)</small></h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/flightcrew1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
@@ -230,7 +279,7 @@ description: Projects
 
       <p>The source code is available on <a href="https://github.com/sbambey/flightcrew" target="_blank">GitHub</a> and a live demo can be seen hosted on <a href="https://safe-forest-2459.herokuapp.com/" target="_blank">Heroku</a> (may take a few seconds to load).</p>
 
-      <h3>6. manifest.space <small>(not actively maintained)</small></h3>
+      <h3>7. manifest.space <small>(not actively maintained)</small></h3>
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="{{ "/images/manifest1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
