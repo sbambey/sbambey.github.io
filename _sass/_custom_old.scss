@@ -1,0 +1,55 @@
+.project {
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    margin-top: 2em;
+  }
+  p {
+    margin-top: 0.5em;
+  }
+  .screenshot {
+    max-width: 20em;
+    max-height: 15em;
+    margin-right: 1em;
+  }
+}
+
+.my-gallery { 
+  figure {
+    display: inline-block;
+  }
+  figcaption {
+    display: none;
+  }
+}
+
+.title-image {
+  width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+.toc {
+  width: 340px;
+  margin: 10px auto 10px auto;
+}
+
+h3 {
+  text-align: center;
+  small.subtitle {
+    color:#666666;
+  }
+}
+
+.link-highlight, .link-highlight:hover {
+  color: #D62828;
+}
+
+.list {
+  margin-left: 40px;
+}
+
+ul > li {
+  margin-left: 20px;
+  list-style-type: circle;
+}

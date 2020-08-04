@@ -1,55 +1,54 @@
-.project {
-  h2 {
+.bg-black {
+    background:#000!important;
+}
+.img-author {
+    max-height: 300px;
+    border:3px solid #fff;
+}
+.intro {
+    background:#000;
+    color:#fff;
+}
+.intro-pic {
+    height:350px;
+    background-image: url("../images/hotfire_narrow.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.btn-intro {
+    color:#fff;
+    background-color:#9d0208;
+    border-color:#e85d04;
+}
+.btn-intro:hover {
+    color:#d3d3d3;
+    background: #6a040f;
+}
+.projects-heading {
     text-align: center;
-  }
-  h3 {
-    margin-top: 2em;
-  }
-  p {
-    margin-top: 0.5em;
-  }
-  .screenshot {
-    max-width: 20em;
-    max-height: 15em;
-    margin-right: 1em;
-  }
+    font-style: italic;
 }
-
-.my-gallery { 
-  figure {
-    display: inline-block;
-  }
-  figcaption {
-    display: none;
-  }
+.projects-heading:before {
+  content: "";
+  display: inline-block;
+  border: 1px solid #000;
+  width: 40px;
+  margin: 11px 20px;
 }
-
-.title-image {
-  width: 900px;
-  margin: 0 auto 0 auto;
+.projects-heading:after {
+  content: "";
+  display: inline-block;
+  border: 1px solid #000;
+  width: 40px;
+  margin: 11px 20px;
 }
-
-.toc {
-  width: 340px;
-  margin: 10px auto 10px auto;
+.card-subheading {
+    color:#9d0208;
+    font-weight: bolder;
 }
-
-h3 {
-  text-align: center;
-  small.subtitle {
-    color:#666666;
-  }
+.bg-med {
+    background-color: #f3f3f3!important;
 }
-
-.link-highlight, .link-highlight:hover {
-  color: #D62828;
-}
-
-.list {
-  margin-left: 40px;
-}
-
-ul > li {
-  margin-left: 20px;
-  list-style-type: circle;
+.text-red {
+    color: #9d0208;
 }
