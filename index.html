@@ -1,323 +1,375 @@
 ---
-description: Projects
+description: 
 ---
 
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang="en">
   <head>
     {% include head.html %}
 
   </head>
   <body>
-    {% include header.html %}
-    <br><br>
-    <div class="container site-header txt-center">
-      <a href="{{ "/" | prepend: site.baseurl }}" class="author-thumb">
-        <img src="{{ "/images/author1.jpg" | prepend: site.baseurl }}" alt="Author thumbnail" class="dot">
-      </a>
-      <h1>Simon Bambey <small>UBC Engineering Physics (Graduating July 2020)</small></h1>
-      <small>Founder, Lead Engineer @ <a href="http://www.ubcrocket.com" target="_blank">UBC Rocket</a></small>
-      <br><u><small>This website is currently being updated. Two years of projects will be added shortly.</small></u>
+    
+    <header>
+      <div class="navbar navbar-dark bg-black shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1040 1056"><path d="M210 899q-10 21-16 30t-21.5 20.5t-41 17T65 973q1-32 4.5-54.5T77 883t13.5-23t17-14.5T130 833q39-19 62-37l-39-50q-15 11-52 30q-38 19-57.5 39T12 880.5T0 1004l1 33l31-1q62 0 103-6t66-21.5t38-31.5t27-45q15-31 22-44l-47-43q-7 9-13.5 19.5t-9.5 17t-8 17.5zm495-694q-53 0-90.5 37.5T577 333q0 35 17 64.5t46.5 46.5t64.5 17t64.5-17t46.5-46.5t17-64.5q0-21-6.5-40.5t-18-35.5t-27.5-27.5t-35.5-18T705 205zm-.5 192q-26.5 0-45-19T641 333t18.5-45t45.5-19q17 0 32 8.5t23.5 23.5t8.5 32q0 26-19 45t-45.5 19zM1024 45q-1-12-9.5-20.5T994 15q-4 0-10.5-.5T955 14t-45 1t-56.5 4.5t-66 9t-71 15.5T643 67q-92 34-163 117q-9 10-17.5 21.5T445 233t-16 27.5t-17.5 32T396 323t-17 33.5t-15 29.5l-7 14l-6 12.5l-7 13.5l-6 11.5l-6 12l-6 10.5H148q-14 0-24 10L7 598q-12 13-6.5 30.5T24 650l191 44q12 15 69 78l72 80l39 165q4 18 22 23q1 1 2.5 1t3.5.5t3 .5q12 0 21-8l119-118q2-2 4.5-5t4-6t2-6.5t.5-6.5V727q7-5 17.5-11t29-16t24.5-13q18-11 75-40.5t93.5-51T873 556q45-40 68-74.5t41-83.5q15-41 25-92t13.5-92t4.5-83t0-59t-1-27zM922 375q-16 43-34.5 71T831 508q-18 16-54 37t-89 48t-71 38q-81 45-92 54q-3 2-5 5t-3.5 6t-2.5 6.5t-1 7.5v167l-68 74l-28-121q-3-9-8-14q-145-162-154-172q-4-4-8.5-7t-9.5-4L91 600l72-76h182q2 0 5-.5t5.5-1.5t5-2.5t4.5-3t3.5-3.5t3.5-5q14-22 49-93q3-5 16.5-32t18.5-37.5t17-33t19.5-35T510 250t18-25q60-70 137-98q133-50 296-49q3 184-39 297z" fill="#fff"/></svg>
 
-      <ul class="social">
-        {% for item in site.social %}
-          {% for i in item %}
-            <li><a href="{{ i.link }}" target="_blank"><i class="icon icon-{{ i.slug }}"></i></a></li>
-          {% endfor %}
-        {% endfor %}
-      </ul>
-      
-      <hr class="hr">
-    </div>
-
-    <section class="container project">
-
-      <h2 class="project">Project Showcase</h2>
-
-      <h3>1. UBC Rocket 2017-present<br><small class="subtitle">Team Captain + Technical lead for liquid rocket engine</small></h3>
-
-      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/whistler_render.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1920x1080">
-            <img src="{{ "/images/whistler_render.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
+            <strong>sbambey</strong>
           </a>
-          <figcaption itemprop="caption description">Whistler Rocket Engine on mounting structure.</figcaption>
-        </figure>
+        </div>
+      </div>
+    </header>
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/nozzle_cutaway.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2088x1046">
-            <img src="{{ "/images/nozzle_cutaway.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Cutaway showing the internals of the Whistler Engine.</figcaption>
-        </figure>
+    <main>
+      <div class="intro">
+        <section class="container">
+          <div class="row pt-lg-5 mx-auto">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+              <img class="img-fluid img-author mx-auto d-block" src="images/author_resized.jpg">
+            </div>
+            <div class="col-lg-8">
+              <h1 class="font-weight-light">Hi, I am Simon Bambey.</h1>
+              <p class="lead">I recently completed my undergrad in Engineering Physics. Four years ago I founded a team that builds and tests liquid-propellant sounding rockets. I have a keen interest in space, aviation, and sustainable transportation.</p>
+              <p>
+                <a href="#projects" class="btn btn-lg btn-intro">Projects</a>
+                <a href="#resume" class="btn btn-lg btn-intro">Resume</a>
+              </p>
+            </div>
+            <div class="col-lg-1"></div>
+          </div>
+        </section>
+      </div>
+      <div class="intro-pic"></div>
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/whistler_assembled.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="3264x2448">
-            <img src="{{ "/images/whistler_assembled.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Whistler Liquid Bi-Propellant Engine assembled.</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/whistler_parts.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="3264x2448">
-            <img src="{{ "/images/whistler_parts.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Whistler Liquid Bi-Propellant Engine taken apart.</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/nozzle_machining.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1500">
-            <img src="{{ "/images/nozzle_machining.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Whistler's nozzle being turned on a lathe. The nozzle was machined from a 60kg heavy solid piece of steel in four full days.</figcaption>
-        </figure>
+      <div class="projects pt-5 bg-light" id="projects">
+        <div class="container">
+          <div class="row">
+            <h2 class="projects-heading py-2">Here are some of the projects I have worked on</h1>
+          </div>
+        </div>
       </div>
 
-      <p>Since Sept 2017, I have been leading a team dubbed "Whistler-Blackcomb" as part of UBC Rocket. This team is the first step towards making our long term goal of sending a rocket to the edge of space become reality. The core technological challenge I identified is the propulsion system, hence it was the logical to start our efforts.</p>
+      <div class="album py-5 bg-light">
+        <div class="container">
 
-      <p>Initially, I led the team through a high level design process. This process yielded core engine parameters such as thrust (12.5kN), burn duration, combustion chamber pressure and more. I considered manufacturing and timeline constraints which led me to make the decision to initially build a heatsink engine to qualify our feed system, engine injector and performance measures. A heatsink engine requires the engine material to soak up the large majority of the generated heat energy.</p>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/team_photo.jpg" class="card-img-top" width="100%" height="225">
 
-      <p>The images seen above are of our first heatsink engine. It will provide sufficient thrust to power our rocket to over 100km in altitude (into space!). A large amount of the manufacturing work is being done by myself. The engine is made of solid steel bar, SCH160 steel pipe and 6061 aluminum. It is completely manufactured in house.</p>
+                <div class="card-body">
+                  <h4>UBC Rocket</h4>
+                  <h6 class="card-subheading">2016 - Present</h6>
+                  <p class="card-text">In 2016, as I was starting in Engineering Physics, I founded the UBC Rocket student engineering design team. Over the next four years, most of my free time was spent working on a large number of very exciting technical projects, while at all times growing and improving the team. The biggest projects I led or took part in are also shown here.</p>
+                  <p class="card-text">My personal highlights include our first place finish in the most comeptitive category of the Spaceport America Cup in 2016, and becoming the first Canadian student team to successfully hot fire a liquid-propellant rocket engine in 2019.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
 
-      <p>In addition to the engine, I am leading the design and development of the feed system for the engine including tanks, valves, sensors and other plumbing components. The design is complete and currently going through final review and approval before components will be procured and the system assembled.</p>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/wb.png" class="card-img-top" width="100%" height="225">
 
-      <p>We take our time to do things right, and safely, as a project of this caliber brings with it risks that need to be considered carefully. We are hopeful that a successful cold-flow qualification of the engine can occur this summer and that a hot fire will occur before the end of the year.</p>
+                <div class="card-body">
+                  <h4>Spaceshot Rocket</h4>
+                  <h6 class="card-subheading">2019 - Present</h6>
+                  <p class="card-text">As our liquid propellant rocket engine project was showing signs of success, UBC Rocket also joined the Base11 Space Challenge with the aim of launching a single stage liquid propellant rocket above the Kármán line.</p>
+                  <p class="card-text">I am leading this effort both as team captain and as the lead design engineer. My time is mostly spent on mission planning, trajectory analysis, propulsion testing & data analysis, vehicle plumbing system design, testing of subsystems, and integration. I also cannot get around a fair amount of technical management work to ensure we progress in the right direction and at the appropriate pace.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
 
-      <h3>2. UBC Rocket 2016-2017<br><small class="subtitle">Team Captain + Technical lead of team's first rocket: Cypress</small></h3>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/test_stand.jpg" class="card-img-top" width="100%" height="225">
 
-      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/simon_rocket.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1333x2000">
-            <img src="{{ "/images/simon_rocket.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Me standing beside the rocket shortly before being departing for competition.</figcaption>
-        </figure>
+                <div class="card-body">
+                  <h4>Liquid Propellant Rocket Engine Test Stand</h4>
+                  <h6 class="card-subheading">2019 - 2020</h6>
+                  <p class="card-text">Equipped with the experience from working at Rocket Lab on the propulsion team, I started leading the effort of building a portable liquid propellant test stand capable of supporting rocket engines producing in excess of 25kN of thrust.</p>
+                  <p class="card-text">The test stand came together at record pace for a student team with only 6 months elapsing from idea to first hot fire. I was responsible for the overall design, and focused specifically on designing the liquid oxygen propellant feed system, the engine interface, hot fire procedures, and all data analysis for over 100 data channels. <strong>On July 13, 2019, UBC Rocket became the first Canadian student team to hot fire a liquid propellant rocket engine.</strong> To date, the test stand has supported three hot fire tests and remains in active use.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/cypress_overview.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1539x2000">
-            <img src="{{ "/images/cypress_overview.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Overview of the Cypress Rocket.</figcaption>
-        </figure>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/cold_flow_rig.jpg" class="card-img-top" width="100%" height="225">
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/rocket_launch.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
-            <img src="{{ "/images/rocket_launch.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Cypress on the launch rail. T-30 minutes to liftoff.</figcaption>
-        </figure>
+                <div class="card-body">
+                  <h4>Cold Flow Rig</h4>
+                  <h6 class="card-subheading">2019</h6>
+                  <p class="card-text">To quantify the flow behaviour of our rocket engine injectors, I designed and built a water flow rig. This rig feeds water at a predetermined pressure from a large pressure vessel through our engine hardware and measures both the mass flow rate and pressure at the injector inlet. The flow rate measurement is taken using a Coriolis flow meter which measures mass flow directly and is very accurate.</p>
+                  <p class="card-text">This flow rig has seen extensive use but is now being retired in favour of installing Coriolis flow meters directly on the rocket engine test stand. We found that measuring the flow behaviour with water was not consistenly scalable to the flow behaviour of other liquids as we would see during an actual engine hot fire.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/avionics_inspection.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
-            <img src="{{ "/images/avionics_inspection.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Conducting pre-flight checklist, confirming avionics and recovery systems are flight-ready.</figcaption>
-        </figure>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/igniter.jpg" class="card-img-top" width="100%" height="225">
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/post_touchdown.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1125">
-            <img src="{{ "/images/post_touchdown.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Cypress recovery after successful flight to 10,053ft.</figcaption>
-        </figure>
+                <div class="card-body">
+                  <h4>Torch Igniter</h4>
+                  <h6 class="card-subheading">2019</h6>
+                  <p class="card-text">A fellow UBC Rocket team member had designed and fabricated a torch igniter prototype. To qualify it, I led a test campaign of over 60 hot fire tests to become familiar with the igniter and to ensure it functions reliably. This test campaign led to several design changes and we ultimately gained the confidence to use this igniter design for our future engine tests.</p>
+                  <p class="card-text">Since the igniter has been developed, it has been successfully used during all three engine tests completed to date.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/rocket_engine_mk1.jpg" class="card-img-top" width="100%" height="225">
+
+                <div class="card-body">
+                  <h4>Liquid Propellant Rocket Engine</h4>
+                  <h6 class="card-subheading">2017 - 2018</h6>
+                  <p class="card-text">After having launched Cypress, I started leading early efforts to develop a suborbital, spacebound rocket powered by a liquid-propellant rocket engine. First, I led the development of a heat sink rocket engine.</p>
+                  <p class="card-text">At the time I had not yet gained much experience with liquid propellant rocketry, so my time was spent reading the classic liquid propellant rocketry textbooks to learn the fundamentals. I co-designed the first engine and spent several hundred hours in the machine shop fabricating parts. I conducted hydrostatic leak checks and flow tests on the engine, and ultimately this would be the first engine we successfully hot fired two years later.</p>
+                  <p></p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/rocket_launch.jpg" class="card-img-top" width="100%" height="225">
+
+                <div class="card-body">
+                  <h4>Cypress: Solid-Motor Sounding Rocket</h4>
+                  <h6 class="card-subheading">2016-2017</h6>
+                  <p class="card-text">In the first year of UBC Rocket, we built a sounding rocket that <strong>competed in and won</strong> the most competitive category of the Spaceport America Cup.</p>
+                  <p>I led the technical aspects of the project and in the process gained significant mechanical and electrical design experience, and worked extensively in the machine shop and with carbon fibre composites. As would become the norm for my entire degree, I spent at least as much time on this project for UBC Rocket, as I spent on all my classes combined.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/robot_elevator_up.jpg" class="card-img-top" width="100%" height="225">
+
+                <div class="card-body">
+                  <h4>MVP: Competition Robot</h4>
+                  <h6 class="card-subheading">Summer 2017</h6>
+                  <p class="card-text">As part of the engineering physics summer program, I spent 6 weeks developing a robot full-time with a group of three friends. The robot competed in a competition between all second-year engineering physics students. The robot was built entirely from scratch by our team.</p>
+                  <p class="card-text">My responsibilities on the team varied greatly. I developed mechanical components using the waterjet cutter, laser cutter and 3D printer, I worked with motors and conducted significant testing of our mechanical components after integration, and I spent a significant amount of time writing software that evaluates sensor data to determine the behaviour of the robot.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/tracker3.png" class="card-img-top" width="100%" height="225">
+
+                <div class="card-body">
+                  <h4>UAS Antenna Tracker</h4>
+                  <h6 class="card-subheading">2015 - 2016</h6>
+                  <p class="card-text">I developed the electronics and software, and assisted with the mechanical build for an antenna tracker used to track drones. The tracking software interfaces with the drone using a protocol called Mavlink and receives live telemetry. It then calculates a yaw and a pitch angle for the antenna and drives two stepper motors in the appropriate directions. Feedback on the actual position of the antenna is provided by an Inertial Measurement Unit (IMU) mounted to the antenna plate. 
+                  <p class="card-text">Working with the IMU has been a challenge, as drift in the output persists to be an issue. In the future, I am planning to replace the IMU with a mechanical feedback that does not have the drift issues.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/dialup2.png" class="card-img-top" width="100%" height="225">
+
+                <div class="card-body">
+                  <h4>DialUp: Laser Communication</h4>
+                  <h6 class="card-subheading">2016</h6>
+                  <p class="card-text">As part of a class final project, I led team of three students that built a laser transceiver capable of transmission rates of up to 0.7kB/s, close to the theoretically determined limit for the hardware used. The project led to an invitation for presentation at <a href="http://iemcon.org/">IEMCON 2016</a>.</p>
+                  <p class="card-text">In addition, I developed a custom communication protocal that makes use of the transceivers to permit transfer of text messages. This taught me a lot about how communication protocols are efficiently implemented and how error checking works. I combined the protocol with a chat server that a teammate developed which allowed us to demo a fully functional chat webapp that transferred messages via our transceiver across the classroom.</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/flightcrew11.png" class="card-img-top" width="100%" height="225">
+
+                <div class="card-body">
+                  <h4>flightcrew.io</h4>
+                  <h6 class="card-subheading">2016 & Earlier</h6>
+                  <p class="card-text">flightcrew.io is a job board that I developed in Ruby on Rails. It automatically matches pilots with jobs appropriate for their experience level. The functionality includes a detailed sign up system which allows users to enter their qualifications such as flight hours, licenses, ratings and more. A comprehensive matching algorithmn I developed, then matches pilots with jobs they are eligible for. Furthermore, I created an extensive back-end for adding and updating jobs on the site.</p>
+
+                  <p class="card-text">The source code is available on <a href="https://github.com/sbambey/flightcrew" target="_blank">GitHub</a> and a live demo can be seen hosted on <a href="https://safe-forest-2459.herokuapp.com/" target="_blank">Heroku</a> (may take a few seconds to load).</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/manifest11.png" class="card-img-top" width="100%" height="225">
+
+                <div class="card-body">
+                  <h4>manifest.space</h4>
+                  <h6 class="card-subheading">2016 & Earlier</h6>
+                  <p class="card-text">manifest.space is a log of SpaceX launches that compiles basic information, as well as video, images and other media.  It was a passion project for me but I have not found the time to keep it updated since I started my degree. The project is a Ruby on Rails app and was a great way for me to fiddle with different libraries and tools that I wanted to further explore. The source code is available on <a href="https://github.com/sbambey/manifest" target="_blank">GitHub</a> and the app remains available hosted by <a href="https://secret-sands-2898.herokuapp.com/providers/spacex/completed" target="_blank">Heroku</a> (may take a few seconds to load).</p>
+                  <!--<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Photos</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">In the news</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
 
-      <p>In the summer of 2016, I founded the <a href="http://www.ubcrocket.com/" target="_blank">UBC Rocket</a> Engineering Design Team which designs, manufactures and launches sounding rockets. We compete yearly in the <a href="http://www.soundingrocket.org/2017-irec.html" target="_blank">Intercollegiate Rocket Engineering Competition</a>, also known as the Spaceport America Cup. The three-year goal of our team is to send a rocket above the Kármán line using a liquid-propellant rocket engine.</p>
-
-      <p>Over the span of ten months we designed and built Cypress, our first rocket, with the goal of launching it to 10,000ft. Cypress was built from scratch in house with only rule-mandated recovery electronics and the rocket motor having been acquired off the shelf. After months of working late nights, a long roadtrip to New Mexico and final launch preparations in the Chihuahuan Desert, Cypresss successfully launched on June 24, 2017 at Spaceport America. <a href="https://www.youtube.com/watch?v=kHUHS2hg2zs" target="_blank">The flight</a> went exceptionally well and secured our team a <strong>first place finish</strong> in the most competitive category of the competition.</p>
-
-      <p>Within one year, UBC Rocket has grown to be the largest and most popular Engineering Design Team at UBC. The team is now 100 members strong, a significant growth from our 60 members last year. This year we are working on upgrades for Cypress, as well as three new rockets. In addition, we are conducting R&D towards a liquid-propellant rocket engine and appropriate test stand.</p>
-
-      <strong><a href="cypress.html" class="link-highlight">Read more about my technical contributions to Cypress and role as team captain.</a></strong>
-
-      <h3>3. Competition Robot</h3>
-
-      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/robot.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
-            <img src="{{ "/images/robot.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Our team's robot named "MVP" for Minimum Viable Product. We designed it to be simple, modular and reliable. The body is made of laser-cut hardboard. Some parts were 3D printed and water-jet cut.</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/robot_elevator_down.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
-            <img src="{{ "/images/robot_elevator_down.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">MVP shown from the rear with elevator in its lowered position.</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/robot_elevator_up.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
-            <img src="{{ "/images/robot_elevator_up.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">MVP shown from the rear with elevator in its upper position. I designed and built the elevator which consists of a geared DC motor that directly drives a rack and pinion. The rack and pinion drives up a drawer extension slider which has forks attacked for the bucket.</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/robot_motors.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
-            <img src="{{ "/images/robot_motors.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">The motor bay of the robot. The robot is driven using two DC motors. In the center are H-Bridges which can be modularily removed for debugging and general maintenance. The motors are mounted to the chassis using 3D printed brackets.</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/robot_internals.jpg" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1333">
-            <img src="{{ "/images/robot_internals.jpg" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">The internals of the robot. All wires are in logical bundles with connectors that make connecting them obvious and easy. Reducing the overall footprint of the robot was very beneficical in traversing the competition track. I designed and integrated the external interface to control the robot (seen on right).</figcaption>
-        </figure>
+      <div class="projects pt-5 bg-med" id="resume">
+        <div class="container">
+          <div class="row">
+            <h2 class="projects-heading py-2">Resume</h1>
+          </div>
+        </div>
       </div>
 
-      <p>As part of the engineering physics summer program, I spent 6 weeks developing a robot full-time with a group of three friends. The robot competed in a competition between all second-year engineering physics students. The robot was built entirely from scratch by our team.</p>
+      <div class="projects py-5 bg-med">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3><span class="badge bg-secondary">Work</span></h3>
+            </div>
+            <div class="col-md-2">
+              <img class="img-fluid rounded" src="images/rocketlab.png">
+            </div>
+            <div class="col-md-6">
+              <h4><small class="text-muted"></small>Propulsion Intern, Rocket Lab USA</h4>
+              <h6 class="text-red font-weight-bold">2018</h6>
+              <h6>Auckland, New Zealand</h6>
+              <p>At Rocket Lab, I was responsible for Kick Stage (now Photon) testing. This involved work on rocket engine test stands, hot fire testing, data analysis and processing, performance determination, preparing hardware for flight, and more.</p>
+            </div>
+          </div>
 
-      <p>The competition included a track that needed to be traversed, marked by a dark line. IR signals "locked" gates when oscillating at certain frequencies. Once at the end of the track, up to six small toys needed to be rescued from little platforms above a water bucket. Once rescued these pets had to be attached to a metal bar "zipline" to return to safety.</p>
-
-      <p>I had multiple roles on the team. My primary task was to design, build and test the elevator and bucket mechanism used to store the rescued pets and bring them safely home (seen on right hand side of robot). I manufactured the parts using a laser cutter, 3D printers and a water jet cutter. A challenge we faced was accurately detecting when the robot is close to the zipline. To overcome this problem completely, I designed the elevator such that it can be raised and the robot simply needs to drive under the zipline and the bucket fall off passively and rolls to safety. No zipline detection required.</p>
-
-      <p>Given my prior manufacturing experience, I also manufactured a large number of parts for all areas of the robot. Often an item would be designed by a team member and I would review and manufacture it, mostly using 3D printers and laser cutters.</p>
-
-      <p>In addition, I made significant contributions to simplifying the internal configuration of the robot. I made the LCD display visible from the outside and added buttons and a potentiometer to allow for quickly adjusting robot settings when testing. This saved us many hours of having to open/close the robot panels.</p>
-
-      <p>My final significant contribution to the project was on the software side. As the robot was close to its final form, I was responsible for extensively testing the robot on the practise track. Many subtle bugs came up which were systematically solved by exposing the robot to all possible test scenarios and failure modes.</p>
-
-
-      <h3>4. Laser Communication Device</h3>
-      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/dialup1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
-            <img src="{{ "/images/dialup1.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Chat GUI developed in Meteor. Very professional test messages.</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/dialup2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
-            <img src="{{ "/images/dialup2.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Early testing of two transceivers we built.</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/dialup3.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
-            <img src="{{ "/images/dialup3.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Photodiode response to laser flashing at 10kHz (each horiz. increment represents 100ms)</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/dialup4.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
-            <img src="{{ "/images/dialup4.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Front-end logic diagram (Written in Javascript using Meteor Framework)</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/dialup5.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1305">
-            <img src="{{ "/images/dialup5.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Back-end logic diagram (Transceiver logic, written in C using Arduino Framework)</figcaption>
-        </figure>
+          <div class="row pt-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <img class="img-fluid rounded" src="images/urthecast.png">
+            </div>
+            <div class="col-md-6">
+              <h4><small class="text-muted"></small>Systems Engineering Intern, Urthecast</h4>
+              <h6 class="text-red font-weight-bold">2017</h6>
+              <h6>Vancouver, Canada</h6>
+              <p>At Urthecast, I developed software that evaluates the performance of different image acquisition planning algorithms. In addition, I used Systems Tool Kit (STK) to model constellations and plan acqusitions. Based on my work, I led an effort to advance the design of on-board processing systems with in-house and external experts.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>Led team of three students that built a laser transceiver capable of transmission rates of up to 0.7kB/s, close to the theoretically determined limit for the hardware used. The project led to an invitation for presentation at <a href="http://iemcon.org/">IEMCON 2016</a>.</p>
 
-      <p>The device was built using an inexpensive laser emitter and a photodiode (combined price &#60;1$) and an Arduino. Initially, I built a prototype and tested the idea for feasibility which was successful. Following that, I built the actual devices and then wrote a custom communication protocol in C (Arduino Framework). The devices are able to automatically detect start-message and end-message signatures due to a predetermined baud rate agreed upon by both the sending and receiving device. It also includes robust error detection, such as the detection of interrupted messages and improper message encoding.</p>
-
-      <p>Over the span of several weeks, I optimized the code to push the transmission rate close to the theoretical limit. Due to inherent delays in the Arduino code-base, I utilized the AVR language to optimize certain functions to speed them up for our use case. Furthermore, due to the fact that the device operates at a frequency much higher than what could be picked up by the human eye, I developed custom code to analyze test runs. The project involved many more challenges that were resolved by doing a lot of testing of the transceiver and carefully analyzing the test run data.</p>
-
-      <p>As a user interface, we developed a Meteor app which serves as the chat server and provides a GUI (seen in image above). The chat was reliable over distances of up to 10m. Entire paragraphs could be sent in less than the blink of an eye. The source code is available on <a href="https://github.com/sbambey/DialUp" target="_blank">GitHub</a>. The final report is available <a href="https://docs.google.com/document/d/1BUUs97jAzEOr9gzTnUQe3K5y5Hn1VIUkkrgJbpcKyLc/edit?usp=sharing">here</a>.</p>
-
-      <h3>5. Antenna Tracker for Unmanned Aircraft Systems</h3>
-      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/tracker2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="1000x1500">
-            <img src="{{ "/images/tracker2.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Assembled antenna tracker tracking drone at competition.</figcaption>
-        </figure>
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/tracker1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x1500">
-            <img src="{{ "/images/tracker1.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Testing of Antenna Tracker yaw control - Outside to allow for acquiry of GPS signal. Equipment set up on our portable stand (aka nearby garbage ton).</figcaption>
-        </figure>
+      <div class="projects py-5 bg-med">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3><span class="badge bg-secondary">Education</span></h3>
+            </div>
+            <div class="col-md-2">
+              <img class="img-fluid rounded" src="images/ubc.jpg">
+            </div>
+            <div class="col-md-6">
+              <h4><small class="text-muted"></small>Bachelor of Applied Science in Engineering Physics</h4>
+              <h6 class="text-red font-weight-bold">Class of 2020</h6>
+              <h6>The University of British Columbia - Vancouver, Canada</h6>
+              
+            </div>
+          </div>
+        </div>
       </div>
-      <p>As part of the Unmanned Aircraft Systems (UAS) Engineering Design Team at UBC, I developed the electronics and software and assisted with the mechanical build for an antenna tracker. The tracker software interfaces with the drone using a protocol called Mavlink and receives live telemetry. It then calculates a yaw and a pitch angle for the antenna and drives two stepper motors in the appropriate directions. The motors were initially controlled by two inexpensive stepper motor drivers that gave us some trouble. The team then received <a href="http://www.zaber.com/products/product_group.php?group=X-MCB2" target="_blank">a high-end stepper motor controller</a> which I integrated into the tracker. Feedback on the actual position of the antenna is provided by an Inertial Measurement Unit (IMU) mounted to the antenna plate. Working with the IMU has been a challenge, as drift in the output persists to be an issue. In the future, I am planning to replace the IMU with a mechanical feedback that does not have the drift issues.</p>
 
-      <h3>6. flightcrew.io <small>(not actively maintained)</small></h3>
-      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/flightcrew1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
-            <img src="{{ "/images/flightcrew1.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Personal job board - Overview of all matched jobs</figcaption>
-        </figure>
+    </main>
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/flightcrew4.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
-            <img src="{{ "/images/flightcrew4.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Specific job page</figcaption>
-        </figure>
 
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/flightcrew2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
-            <img src="{{ "/images/flightcrew2.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Pilot sign-up form - Log of all flight hours</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/flightcrew3.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
-            <img src="{{ "/images/flightcrew3.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Pilot sign-up form - Log of pilot licenses and ratings</figcaption>
-        </figure>
-      </div>
-      <p>flightcrew.io is a job board that I developed in Ruby on Rails. It automatically matches pilots with jobs appropriate for their experience level. The project was mainly meant to be a way for me to learn proper web development skills, to be exciting to me personally and to provide value to some users. The functionality includes a detailed sign up system which allows users to enter their qualifications such as flight hours, licenses, ratings and more. A comprehensive matching algorithmn I developed, then matches pilots with jobs they are eligible for. Furthermore, I created an extensive back-end for adding and updating jobs on the site.</p>
-
-      <p>A significant challenge was keeping up with a very large number of data sources (pilot job sources). To assist me, I developed automatic tasks that would update an internal database of all jobs and alert me when job pages had been updated. This would direct my attention and effort in the right places and allowed me to keep flightcrew.io up to date.</p>
-
-      <p>The source code is available on <a href="https://github.com/sbambey/flightcrew" target="_blank">GitHub</a> and a live demo can be seen hosted on <a href="https://safe-forest-2459.herokuapp.com/" target="_blank">Heroku</a> (may take a few seconds to load).</p>
-
-      <h3>7. manifest.space <small>(not actively maintained)</small></h3>
-      <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/manifest1.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
-            <img src="{{ "/images/manifest1.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">SpaceX Manifest Header</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/manifest2.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2560x1305">
-            <img src="{{ "/images/manifest2.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Launch Listings</figcaption>
-        </figure>
-
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="{{ "/images/manifest3.png" | prepend: site.baseurl }}" itemprop="contentUrl" data-size="2000x2020">
-            <img src="{{ "/images/manifest3.png" | prepend: site.baseurl }}" itemprop="thumbnail" class="screenshot">
-          </a>
-          <figcaption itemprop="caption description">Launch Details and Media</figcaption>
-        </figure>
-      </div>
-      <p>manifest.space is a log of some of SpaceX's launches. It is a passion project for me and I occassionally find time to update it. The project is a Ruby on Rails app and is a great way for me to fiddle with different libraries and tools. In the early phases, I collaborated with some other people over the internet and as a result, I developed a basic revision tracking system available through the admin panel and integrated a markdown editor. The source code is available on <a href="https://github.com/sbambey/manifest" target="_blank">GitHub</a> and a live demo can be seen hosted on <a href="https://secret-sands-2898.herokuapp.com/providers/spacex/completed" target="_blank">Heroku</a> (may take a few seconds to load).</p>
-      
-    </section>
 
     {% include footer.html %}
+
+
+        
   </body>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108075444-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-108075444-1');
-  </script>
-
 </html>
