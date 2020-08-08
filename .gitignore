@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 .DS_Store
 images_old/
+index_3.html
+_sass_old/
