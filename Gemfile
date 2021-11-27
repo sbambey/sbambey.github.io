@@ -22,3 +22,7 @@ gem "jekyll"
 # group :jekyll_plugins do
 #   gem "jekyll-github-metadata", "~> 1.0"
 # end
+
+gem "addressable", ">= 2.8.0"
+gem "kramdown", ">= 2.3.1"
+
